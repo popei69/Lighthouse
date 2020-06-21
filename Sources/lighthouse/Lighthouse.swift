@@ -1,12 +1,12 @@
 
 import Foundation
 
-enum UrlFormatError: Error {
+public enum UrlFormatError: Error {
     case emptyUrl
     case noValidHost
 }
 
-final class Lighthouse {
+public final class Lighthouse {
     
     private var tasks: [String: URLSessionTask] = [:]
     
