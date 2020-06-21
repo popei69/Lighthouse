@@ -10,6 +10,8 @@ public final class Lighthouse {
     
     private var tasks: [String: URLSessionTask] = [:]
     
+    public init() { }
+    
     /// Build Apple App Site Association urls from a given url string.
     public func makeDomainUrl(for urlString: String?) -> Result<[URL], UrlFormatError> {
         guard let urlString = urlString else { 
