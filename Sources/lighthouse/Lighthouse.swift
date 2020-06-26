@@ -1,6 +1,10 @@
 
 import Foundation
 
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
 public enum UrlFormatError: Error {
     case emptyUrl
     case noValidHost

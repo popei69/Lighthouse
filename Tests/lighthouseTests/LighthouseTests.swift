@@ -1,5 +1,5 @@
 import XCTest
-@testable import lighthouse
+@testable import Lighthouse
 
 final class LighthouseTests: XCTestCase {
     
