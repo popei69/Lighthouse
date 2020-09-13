@@ -6,8 +6,8 @@
 //
 
 public struct App: Codable {
-    let appId: String
-    let paths: [String]
+    public let appId: String
+    public let paths: [String]
     
     private enum CodingKeys: String, CodingKey {
         case appId = "appID"
@@ -16,9 +16,9 @@ public struct App: Codable {
 }
 
 public struct AppDomain: Codable {
-    let details: [App]
+    public let details: [App]
 }
 
 public struct Domain: Codable {
-    let applinks: AppDomain 
+    public let applinks: AppDomain 
 }
